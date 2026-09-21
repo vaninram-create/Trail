@@ -1,2 +1,2 @@
-inport os
+import os
 print "Hello World"
