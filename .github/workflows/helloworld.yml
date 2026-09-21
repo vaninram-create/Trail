@@ -7,7 +7,7 @@
 
          steps:
             - name: check out repository code
-              uses: actions/checkout
-            - run: echo "Hello-World"
+              uses: actions/checkout@v4
+            - run: echo "$(hello-world.py)"
             
   
