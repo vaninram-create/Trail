@@ -8,6 +8,11 @@
          steps:
             - name: check out repository code
               uses: actions/checkout@v4
-            - run: echo "$(hello-world.py)"
+            - name: name: Setup Python
+              uses: actions/setup-python@v5
+              with :
+                  python-version: '3.12'
+             - name: Run python file
+               run: python hello-world.py
             
   
